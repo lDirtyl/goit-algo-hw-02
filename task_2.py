@@ -13,3 +13,8 @@ def is_palindrome(s):
             return False
     
     return True
+
+tests = ["A man a plan a canal Panama", "No lemon, no melon", "OpenAI", "Was it a car or a cat I saw?", "Not a palindrome"]
+
+results = {test: is_palindrome(test) for test in tests}
+results
